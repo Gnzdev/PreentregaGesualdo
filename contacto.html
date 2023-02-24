@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mi Página</title>
+  <!-- Carga de Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header><nav class="navbar navbar-expand-lg bg-body-tertiary py-3 px-4">
+    <div class="container-fluid">
+      <img src="img/ggico.png" alt="Logo GG Designs" class="logogg">
+      <a class="navbar-brand fw-bold" href="#">GGDesigns</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Momardos</a>
+          </li>
+              <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Montaje Digital</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Reels Futbol</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!-- Cabecera -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="fw-bold mb-4">Bienvenidos a mi página</h1>
+          <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget neque nulla. Integer sed finibus ipsum. Duis posuere elementum tellus, sed cursus est. </p>
+          <a class="btn btn-primary btn-lg" href="#">Más información</a>
+        </div>
+        <div class="col-md-6">
+          <video class="col-md-10" autoplay muted loop src="img/automatic.mp4"></video>
+        </div>
+      </div>
+    </div>
+
+<!-- Sección de contacto -->
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="fw-bold mb-4">Contactame</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5" placeholder="Ingresa tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h2 class="fw-bold mb-4">Información de contacto</h2>
+        <p><img src="img/geo-alt-fill.svg" alt="Direccion"> 123 Calle Falsa, Springfield</p>
+        <p><img src="img/phone-fill.svg" alt="Direccion"> +54 (11) 000-0000</p>
+        <p><img src="img/envelope-fill.svg" alt="Direccion"> info@GGDev.com.ar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pie de página -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <p class="mb-0">© 2023 - GGDev</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item me-3"><a href="#"><img src="img/youtube.svg" alt="logo youtube"></a></li>
+            <li class="list-inline-item me-3"><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-end">
+          <button class="btn btn-light btn-sm" onclick="scrollToTop()"><img src="img/arrow-up-circle-fill.svg" alt="flecha volver arriba">Volver arriba</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-DIvmoN/2BRn1xdtGufq3kPvMlrPnW8N9XnR9JLebIgauFtfub8sLdWTpvpHEwFWv" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
